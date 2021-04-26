@@ -1,10 +1,18 @@
 import React from 'react'
+import styled from 'styled-components';
+
+const Drink = styled.div`
+  text-align: center;
+`
+
 
 const Drinks = () => {
   return (
-    <div>
-      ドリンク一覧
-    </div>
+    <>
+      <Drink>
+        ドリンク
+      </Drink>
+    </>
   )
 }
 
