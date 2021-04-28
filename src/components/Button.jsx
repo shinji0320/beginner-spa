@@ -9,7 +9,7 @@ const Button = () => {
   };
   const handleAlert = () => {
     // e.preventDefault();
-    alert("アラートの確認")
+    alert("アラートの確認");
   };
   return (
     <div>

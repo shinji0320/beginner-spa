@@ -17,6 +17,8 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/buttons">
+          {/* <Route exact path="/buttons/:id/edit" component={表示させたいページ}> */}
+          {/* path="/:id/"を使うことでidで管理できるようになる */}
             <Button />
             <Link to="/">Home</Link>
           </Route>
@@ -32,10 +34,11 @@ function App() {
             <First />
           </Route>
 
-          <Route exact path="/items">
-            <Link to="/">Home</Link>
-            <Index />
-            <Show />
+          <Route exact path="/index" component={Index}>
+             {/* useState, useEffectの確認 */}
+            {/* <Link to="/">Home</Link>
+            <Index /> */}
+            {/* <Show /> */}
           </Route>
 
           <Route exact path="/">
@@ -48,8 +51,8 @@ function App() {
             <Link to="/first" className="link">
               First
             </Link>
-            <Link to="/items" className="link">
-              items
+            <Link to="/index" className="link">
+              Indexページへ
             </Link>
             <Second />
             <Third />
