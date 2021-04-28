@@ -39,10 +39,18 @@ function App() {
           </Route>
 
           <Route exact path="/">
-            <Link to="/buttons">Buttons</Link>
-            <Link to="/menus">Menus</Link>
-            <Link to="/first">First</Link>
-            <Link to="/items">items</Link>
+            <Link to="/buttons" className="link">
+              Buttons
+            </Link>
+            <Link to="/menus" className="link">
+              Menus
+            </Link>
+            <Link to="/first" className="link">
+              First
+            </Link>
+            <Link to="/items" className="link">
+              items
+            </Link>
             <Second />
             <Third />
           </Route>
