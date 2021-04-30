@@ -2,6 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+const TestButton = styled.button`
+  padding: 30px;
+  margin: 50px;
+`;
+
 const Button = () => {
   const handleClick = () => {
     // e.preventDefault();
@@ -14,8 +19,8 @@ const Button = () => {
   return (
     <div>
       <Link to="/">Home</Link>
-      <button onClick={handleClick}>ボタン</button>
-      <button onClick={handleAlert}>ボタン</button>
+      <TestButton onClick={handleClick}>クリック</TestButton>
+      <TestButton onClick={handleAlert}>アラート</TestButton>
     </div>
   );
 };
